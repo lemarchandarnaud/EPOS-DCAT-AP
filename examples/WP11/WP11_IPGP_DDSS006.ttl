@@ -320,7 +320,8 @@
 					hydra:variable "network"^^xsd:string;
 					rdfs:range "xsd:string";
 					rdfs:label "network code or comma seperated network codes, wildcards (? or *) are authorized";
-          				schema:defaultValue "GL";
+          			schema:defaultValue "GL,MQ,PF";
+  					http:paramValue "GL,MQ,PF";
 					hydra:required "false"^^xsd:boolean;
 				];
 				hydra:mapping[ a hydra:IriTemplateMapping;
@@ -402,7 +403,8 @@
 					hydra:variable "network"^^xsd:string;
 					rdfs:range "xsd:string";
 					rdfs:label "network code or comma seperated network codes, wildcards (? or *) are authorized";
-					schema:defaultValue "*";
+					schema:defaultValue "GL,MQ,PF";
+  					http:paramValue "GL,MQ,PF";
 					hydra:required "true"^^xsd:boolean;
 				];
 				hydra:mapping[ a hydra:IriTemplateMapping;
